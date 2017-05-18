@@ -10,12 +10,15 @@
     <title>Neat</title>
   </head>
   <body>
-    <section class="section-portada">
-      <div class="jumbotron portada">
+    <section class="container container-fluid section-portada">
+      <span class="icono icon--hero-park"></span>
+      <span class="icono icon--hero-bench"></span>
+      <span class="portada_bg icon--hero-bg"></span>
+      <div class="">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <img src="https://thisisneat.com.au/wp-content/themes/neat/shared/img/logo.png" alt="">
+              <img src="https://thisisneat.com.au/wp-content/themes/neat/shared/img/logo.png" class="img-responsive visible-xs" alt="">
               <h2>The simplest way to get your bond back. <br>
               <i>Guaranteed</i></h2>
             </div>
@@ -27,10 +30,7 @@
           </div>
         </div>
       </div>
-      <span class="icon icon--hero-bg"></span>
-      <span class="icon icon--hero-park"></span>
-      <span class="icon icon--hero-bench"></span>
-      <span class=""></span>
+      <span class="icono icon--hero"></span>
     </section>
     <section class="works">
       <div class="container">
@@ -552,42 +552,6 @@
                       <div class="col-xs-12">
                         <div class="condicional">
                           <div class="condicional_checkbox">
-                            <input type="checkbox" id="quote-extra-" name="" value="">
-                            <label for="quote-extra-"></label>
-                            <button type="button" class="icon--tooltip" name="button"></button>
-                          </div>
-                          <div class="condicional_cuerpo">
-
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12">
-                        <div class="condicional">
-                          <div class="condicional_checkbox">
-                            <input type="checkbox" id="quote-extra-" name="" value="">
-                            <label for="quote-extra-"></label>
-                            <button type="button" class="icon--tooltip" name="button"></button>
-                          </div>
-                          <div class="condicional_cuerpo">
-
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12">
-                        <div class="condicional">
-                          <div class="condicional_checkbox">
-                            <input type="checkbox" id="quote-extra-" name="" value="">
-                            <label for="quote-extra-"></label>
-                            <button type="button" class="icon--tooltip" name="button"></button>
-                          </div>
-                          <div class="condicional_cuerpo">
-
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12">
-                        <div class="condicional">
-                          <div class="condicional_checkbox">
                             <input type="checkbox" id="quote-extra-carpet" name="" value="">
                             <label for="quote-extra-carpet">Carpet steam clean</label>
                             <button type="button" class="icon--tooltip" name="button"></button>
@@ -610,9 +574,93 @@
                             <button type="button" class="icon--tooltip" name="button"></button>
                           </div>
                           <div class="condicional_cuerpo">
-                            <div></div>
-                            <div></div>
-                            <label for=""></label>
+                            <div class="form-group">
+                              <div class="radio">
+                                <input type="radio" id="quote-extra-wall-full" name="" value="">
+                                <label for="quote-extra-wall-full">Full Wash</label>
+                              </div>
+                              <div class="radio">
+                                <input type="radio" id="quote-extra-wall-spot" name="" value="">
+                                <label for="quote-extra-wall-spot">Spot clean</label>
+                              </div>
+                            </div>
+                            <div class="">
+                              <button type="button" class="" name="button"><span>-</span></button>
+                              <input id ="quote-extra-wall-number" class="form-control" type="text" name="" value="">
+                              <button type="button" name="button"><span>+</span></button>
+                            </div>
+                            <label for="quote-extra-wall-number">Number of walls</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12">
+                        <div class="condicional">
+                          <div class="condicional_checkbox">
+                            <input type="checkbox" id="quote-extra-window" name="" value="">
+                            <label for="quote-extra-window">Window wash <em>(external or floor-to-ceiling) </em></label>
+                            <button type="button" class="icon--tooltip" name="button"></button>
+                          </div>
+                          <div class="condicional_cuerpo">
+                            <div class="form-group">
+                              <div class="radio">
+                                <input type="radio" id="quote-extra-window-external" name="" value="">
+                                <label for="quote-extra-window-external">External</label>
+                              </div>
+                              <div class="radio">
+                                <input type="radio" id="quote-extra-window-floor" name="" value="">
+                                <label for="quote-extra-window-floor">Floor-to-ceiling</label>
+                              </div>
+                            </div>
+                            <div class="">
+                              <button type="button" class="" name="button"><span>-</span></button>
+                              <input id ="quote-extra-window-number" class="form-control" type="text" name="" value="">
+                              <button type="button" name="button"><span>+</span></button>
+                            </div>
+                            <label for="quote-extra-window-number">Number of windows</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12">
+                        <div class="condicional">
+                          <div class="condicional_checkbox">
+                            <input type="checkbox" id="quote-extra-blind" name="" value="">
+                            <label for="quote-extra-blind">Blind/shutters deep clean</label>
+                            <button type="button" class="icon--tooltip" name="button"></button>
+                          </div>
+                          <div class="condicional_cuerpo">
+                            <div class="">
+                              <button type="button" class="" name="button"><span>-</span></button>
+                              <input id ="quote-extra-blind-number" class="form-control" type="text" name="" value="">
+                              <button type="button" name="button"><span>+</span></button>
+                            </div>
+                            <label for="quote-extra-blind-number">Number of windows</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12">
+                        <div class="condicional">
+                          <div class="condicional_checkbox">
+                            <input type="checkbox" id="quote-extra-appliance" name="" value="">
+                            <label for="quote-extra-appliance">Appliance deep clean</label>
+                            <button type="button" class="icon--tooltip" name="button"></button>
+                          </div>
+                          <div class="condicional_cuerpo">
+                            <div class="checkbox">
+                              <input type="checkbox" id="quote-extra-appliance-fridge" name="" value="">
+                              <label for="quote-extra-appliance-fridge">Fridge/Freezer</label>
+                            </div>
+                            <div class="checkbox">
+                              <input type="checkbox" id="quote-extra-appliance-oven" name="" value="">
+                              <label for="quote-extra-appliance-oven">Oven (90cm)</label>
+                            </div>
+                            <div class="checkbox">
+                              <input type="checkbox" id="quote-extra-appliance-dishwasher" name="" value="">
+                              <label for="quote-extra-appliance-dishwasher">Dishwasher</label>
+                            </div>
+                            <div class="checkbox">
+                              <input type="checkbox" id="quote-extra-appliance-microwave" name="" value="">
+                              <label for="quote-extra-appliance-microwave">Microwave</label>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -623,16 +671,9 @@
             </div>
             <div class="form-group">
               <div class="row">
-                <div class="row_vertical">
-                  <div class="col-xs-12 col-sm-4">
-                    <h5 class="quote_title">
-                      <small></small>
-                    </h5>
-
-                  </div>
-                  <div class="col-xs-12 col-sm-8">
-
-                  </div>
+                <div class="col-xs-12">
+                  <button type="button" name="button">Get your quote
+                  <i class="icon--loading"></i></button>
                 </div>
               </div>
             </div>
@@ -640,6 +681,51 @@
         </div>
       </div>
     </section>
+    <footer>
+      <div class="container">
+        <div class="col-xs-12">
+          <a href="#">
+            <img src="https://thisisneat.com.au/wp-content/themes/neat/shared/img/logo.png" alt="">
+          </a>
+          <h4>You move out, we clean up.</h4>
+          <div class="social">
+            <a href="" class="icon--social-fb"></a>
+            <a href="" class="icon--social-tw"></a>
+            <a href="" class="icon--social-gp"></a>
+          </div>
+          <nav>
+            <div class="menu_footer">
+              <ul>
+                <li class="">
+                  <a href="#">Contact</a>
+                </li>
+                <li class="">
+                  <a href="#">FAQ</a>
+                </li>
+                <li class="">
+                  <a href="#">Blog</a>
+                </li>
+                <li class="">
+                  <a href="#">Terms and Conditions</a>
+                </li>
+                <li class="">
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li class="">
+                  <a href="#">ABN: 92 616 673 440</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <div class="contact">
+      <button type="button" class="" name="button">
+        <i></i>
+        <p>Contact us!</p>
+      </button>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js" charset="utf-8"></script>
   </body>
