@@ -3,21 +3,17 @@ body{
 }
 .section-portada{
   width: 100%;
-  height: 80vh;
+  height: 87vh;
+
 }
 .icono{
   display: inline-block;
   width: 100%;
   height: 300px;
 }
-.portada_bg{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 75vh;
+.icon--hero-bg{
+  background-position: center;
   background-size: cover;
-  background-position: right bottom;
 }
 
 
@@ -35,13 +31,14 @@ body{
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md-min) {
-  .portada_bg{
-    background-position: center right;
-  }
+
 
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) {
-  ...
+  .icon--hero-bg{
+    background-position: center;
+    background-size: cover;
+  }
 }
