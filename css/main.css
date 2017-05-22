@@ -1,44 +1,86 @@
 body{
-  background-color: white;
+  font-family: "proxima-nova-soft";
 }
+@font-face {
+
+  font-family: "proxima-nova-soft";
+
+  font-style: normal;
+
+  src: url("https://use.typekit.net/af/b5823a/00000000000000000001743c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/b5823a/00000000000000000001743c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/b5823a/00000000000000000001743c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+
+}
+
 .section-portada{
   width: 100%;
   height: 87vh;
 
 }
-.icono{
-  display: inline-block;
-  width: 100%;
-  height: 300px;
-}
 .icon--hero-bg{
   background-position: center;
   background-size: cover;
 }
-
-
-
-
-
-
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) {
-  ...
+.works{
+  background-color: #F9F9F9;
+  padding-top: 10%;
+}
+.work-icono{
+  width: 225px;
+  height: 225px;
+  background-color: #FFCC66;
+  position: relative;
+  .center-block();
+}
+.icono{
+  display: inline-block;
+  width: 175px;
+  height: 175px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background-size: contain;
+}
+.mb-10{
+  margin-bottom: 10%;
+}
+.works h2{
+  font-size: 3.3rem;
+  color: #3498DB;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.works p{
+  line-height: 2.3rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
 }
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {
-
-
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) {
+@media screen and (min-width: 600px) {
   .icon--hero-bg{
     background-position: center;
     background-size: cover;
   }
+  .works{
+  }
+  .work-icono{
+    width: 275px;
+    height: 275px;
+
+  }
+  .icono{
+    top: 15%;
+    left: 20%;
+  }
+  .works h2{
+    font-size: 4.7rem;
+    text-align:left;
+  }
+  .works p{
+    font-size: 1.76rem;
+    line-height: 3.5rem;
+    text-align: left;
+  }
+
 }
